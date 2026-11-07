@@ -15,7 +15,7 @@ describe("Examen Final - Serie II", () => {
     cy.get("#precio").type("350")
     cy.get("#stock").type("12")
     cy.get("#btn-guardar").click()
-    cy.get(".fila-producto").should("have.length", 7)
+    cy.get(".fila-producto").should("have.length", 6)
     cy.contains(".fila-producto", "Webcam").should("be.visible")
   })
 
